@@ -3,15 +3,14 @@ layout: page
 title: About
 permalink: /about/
 ---
-
+<!--
 <img src="{{ site.baseurl }}/assets/profile-placeholder.gif" title="Profile Picture" class="profile">
+-->
 
-Centrarium is a custom theme for Jekyll, made by [Ben Centra][bencentra] for his own blog. He'd be humbled if you liked it enough to use it as well! Installation and configuration instructions can be found in the [GitHub repository](https://github.com/bencentra/centrarium).
+<h2>About Jessy Min</h2>
 
-This page is a good place to write about yourself, your project, your product, or whatever it is your site is for. You can replace the image above, or you can get rid of it entirely. 
+안녕하세요, Jessy Min입니다. 고객조사 리서처이자 신제품 컨셉 기획자로 일하고 있으며, 데이터분석가로의 커리어체인지를 준비 중입니다.
 
-You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/). And you can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+커리어의 시작을 UX리서처로 했기에 리서처로서의 아이덴티티를 갖고 있습니다. 현재는 전자회사에서 신제품 기획 및 이를 위한 고객조사를 하고 있습니다. 저에게 데이터분석은 고객을 더 잘 이해하기 위한 방편으로서 고객조사 결과 데이터 분석의 연장선상에 있습니다.
 
-[centrarium]: https://github.com/bencentra/centrarium
-[bencentra]: http://bencentra.com
-[jekyll]: https://github.com/jekyll/jekyll
+새로운 제품이나 기능이 고객과 처음 만나는 순간을 지켜볼 때 가장 짜릿합니다. 기술이 인간의 삶을 더 나아지게 할 수 있다고 믿습니다. 하지만 그러기 위해 누군가의 눈은 오로지 사람을 바라보고 있어야 합니다. 세심하고 날카로운 눈으로 그 일을 합니다.
