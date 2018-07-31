@@ -28,8 +28,9 @@ markdown: kramdown
 paginate: 5
 paginate_path: "/page:num/"
 inter_post_navigation: false
-highlightjs_theme: "Color-Brewer"
-  # "monokai-sublime"
+highlightjs_theme: "monokai-sublime"
+  # "Color-Brewer"
+
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives:
