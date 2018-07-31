@@ -3,6 +3,7 @@ layout : post
 comments : true
 title : 고객조사 설문문항의 구성
 date : 2018-03-25
+category : 'Customer Research'
 ---
 
 고객조사를 구분하는 전형적인 분류법은 정량조사와 정성조사로 구분하는 것이다.

@@ -3,6 +3,7 @@ layout : post
 comments : true
 title : "[번역] 데이터 분석을 위한 SQL 쿼리 효율"
 date : 2018-04-08
+category : 'SQL'
 ---
 
 
