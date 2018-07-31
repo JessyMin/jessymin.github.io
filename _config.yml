@@ -13,7 +13,7 @@ title: Jessy Min's blog
 subtitle: "Data Analyst & UX researcher on the Road"
 email: uxinsight
 name: Jessy Min
-description: >
+description:
   Data is the most reliable partner on my journey.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
@@ -73,9 +73,9 @@ social:
   - name: Twitter
     icon: twitter
     username: TheBenCentra
-    url: https://twitter.com/TheBenCentra
+    url: 
     desc: Follow me on Twitter
-    share: true
+    share: false
 
   - name: Facebook
     icon: facebook
@@ -94,7 +94,7 @@ social:
   - name: LinkedIn
     icon: linkedin
     username: jessymin
-    url: https://www.linkedin.com/pub/ben-centra/47/769/60a
+    url:
     desc: Connect with me on LinkedIn
     share: true
 
