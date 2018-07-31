@@ -40,6 +40,9 @@ jekyll-archives:
     category: '/category/:name/'
     tag: '/tag/:name/'
 
+sass:
+  style: compressed
+
 # Disqus comments
 # disqus_shortname: bencentra
 
@@ -73,7 +76,7 @@ social:
   - name: Twitter
     icon: twitter
     username: TheBenCentra
-    url: 
+    url:
     desc: Follow me on Twitter
     share: false
 
