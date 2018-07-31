@@ -23,7 +23,7 @@ Shiny 예제에 가장 많이 등장하는 방법이다. 주로 아래 데이터
 
 Server.R이나 UI.R에서 해당 패키지를 import해서 사용하면 된다.
 
-```r
+~~~r
 library(shiny)
 library(ggplot2)
 
@@ -57,7 +57,7 @@ shinyApp(
     })
   }
 )
-```
+~~~
 주의
 * `aes(x, y)`가 아닌 `aes_string(x, y)` 사용
 * `print` 해줘야 함
