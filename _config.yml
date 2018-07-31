@@ -28,7 +28,8 @@ markdown: kramdown
 paginate: 5
 paginate_path: "/page:num/"
 inter_post_navigation: false
-highlightjs_theme: "monokai-sublime"
+highlightjs_theme: "mono-blue"
+  # "monokai-sublime"
   # "Color-Brewer"
 
 
