@@ -94,6 +94,18 @@ data <- read.csv("./datafolder/sample.csv")
 
 <br>
 
+
+__update:__
+server.R/ui.R과 같은 디렉토리에 위치하는 것도 무방하다.
+
+```r
+data <- read.csv("./sample.csv")
+```
+* shinyapp.io에 배포할 때는 이렇게 해야만 에러가 발생하지 않았다.
+* 그 외의 시도에서는 'no such file or directory' 에러 발생.
+
+<br>
+
 Shiny 튜토리얼에 해당 내용을 다룬 챕터가 있다. 아래 내용은 날잡아서 자세히 살펴보면 좋을 듯 하다.
 
 * 아래 글의 'loading files and file paths'라는 챕터 참고
@@ -108,7 +120,7 @@ Reactive 객체는 따로 다뤄야 할 만큼 중요한 내용이지만, 가장
 
 우선 __Reactive는 사용자의 인풋값이 변하면 이를 아웃풋에 반영하는 반영한 아웃풋을 반환하는 것__ 을 말한다. 같은 작업이 반복된다면 Reactive object를 만들어 재사용하게 된다.
 
-내가 하려는 작업은 __'input한 조건에 맞는 rows만 필터링해 테이블로 반환하기'__ 였다. 구글링을 해보면 column 필터링에 대한 내용은 많은 반면, row 필터링한 케이스가 많지 않았다. 그러나 핵심은 아래와 같다. 
+내가 하려는 작업은 __'input한 조건에 맞는 rows만 필터링해 테이블로 반환하기'__ 였다. 구글링을 해보면 column 필터링에 대한 내용은 많은 반면, row 필터링한 케이스가 많지 않았다. 그러나 핵심은 아래와 같다.
 
 * 수행하려는 작업을 reactive 함수 안에 넣어서 객체에 할당
   * selectedData <- reactive ({ })
