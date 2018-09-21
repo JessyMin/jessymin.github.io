@@ -7,6 +7,7 @@ category : 'Research'
 ---
 
 
+* 대전제 : making more accurate predictions
 
 ### 3. Logistic Regression
 
@@ -48,4 +49,56 @@ auc(ROC)
 ### 4. Classification Trees
 
 * 통계가 필요 없기 때문에 비즈니스 전략에 유용하게 쓰임
-  * 특히 투명성이 중요한 분야. ex) 대출 조건 심사
+  * 특히 투명성이 중요한 분야. ex) 대출 조건 심사/승인
+* root node -> decision nodes
+* leaf node = final decision
+* R 패키지
+  * `rpart( )`
+
+
+``` r
+library(rpart)
+
+loan_model <- rpart(outcome ~ loan_amount + credit_score, data = loans, method = "class", control = rpart.control(cp = 0))
+
+predict(loan_model, good_credit, type = "class")
+predict(loan_model, bad_credit, type = "class")
+
+#visualizing classification trees
+library(rpart.plot)
+rpart.plot(loan_model)
+
+```
+
+#### 4-1) Growing larger classification Trees
+
+* Choosing where to split
+  * Devide-and-conquer
+    * The group it can split to create the greatest improvement in subgroup homogeneity.
+    * Divide-and-conquer always looks to create the split resulting in the greatest improvement to purity.
+  * 늘 Axis parallel split을 만든다.
+  * 쓸데없이 복잡해질 수 있음
+  * noise를 모델링하느라 overfit 될 위험성
+* Tree performance 측정하기
+  * training set / test set으로 분리
+  * 랜덤 샘플 형성 : `sample( )`
+
+```r
+nrow(loans)
+nrow(loans)*0.75
+
+sample_rows <- sample(11312, 8484)
+
+loans_train <- loans[sample_rows,]
+loans_test <- loans[-sample_rows,]
+
+loan_model <- rpart(outcome ~ ., data = loans_train, method = "class", control = rpart.control(cp = 0))
+
+loans_test$pred <- predict(loan_model, loans_test, type="class")
+
+# Examine the confusion matrix
+table(loans_test$pred, loans_test$outcome)
+
+# Compute the accuracy
+mean(loans_test$outcome == loans_test$pred)
+```
