@@ -1,9 +1,9 @@
 ---
 layout : post
 comments : true
-title : "[번역/요약] 검색 로그 분석 : 웹UX 리서치에서 가장 과소평가된 기회영역"
-date : 2018-08-26
-category : 'Research'
+title : "[공부] Datacamp 머신러닝 - 지도학습 : 분류"
+date : 2018-09-03
+category : 'Machine Learning'
 ---
 
 
