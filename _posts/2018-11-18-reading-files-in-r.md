@@ -5,8 +5,8 @@ date : 2018-11-18
 category : 'R'
 ---
 
-R에서 CSV 파일을 읽는 방법은 크게 3가지가 있다.
-
+R에서 CSV 파일을 읽는 방법은 크게 3가지가 있다. 어떤 상황에 어떤 함수를 써야 효율적인지 궁금해서 간단히 알아보았다. 
+<br>
 - `read.csv( )` : base R 함수
 - `read_csv( )` : readr 패키지, tidyverse 패키지의 일부
 - `fread( )` : data.table 패키지
