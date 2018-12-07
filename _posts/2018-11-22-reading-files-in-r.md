@@ -2,7 +2,7 @@
 layout : post
 title : "R에서 빠르게 csv파일 읽기"
 date : 2018-11-22
-category : 'R'
+categories : 'R'
 ---
 
 R에서 CSV 파일을 읽는 방법은 크게 3가지가 있다. 어떤 상황에 어떤 함수를 써야 효율적인지 궁금해서 간단히 알아보았다.
