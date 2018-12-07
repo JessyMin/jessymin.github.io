@@ -3,7 +3,7 @@ layout : post
 title : "고객조사에 쓰이는 실무 통계 : Intro"
 date : 2018-02-24
 comments : true
-category : 'Customer Research'
+category : 'Research/Customer Insight'
 ---
 
 몇년 전, 스타트업에 대해 막 관심을 갖게 되었을 때의 일이다. 프라이머 엔턴십에 참여해 다양한 분들과 페친을 맺으면서 초기 스타트업의 성장과정을 지켜보게 되었다.

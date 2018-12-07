@@ -3,7 +3,7 @@ layout : post
 comments : true
 title : 고객조사에 통계분석이 필요한 이유
 date : 2018-03-11
-category : 'Customer Research'
+category : 'Research/Customer Insight'
 ---
 
 
