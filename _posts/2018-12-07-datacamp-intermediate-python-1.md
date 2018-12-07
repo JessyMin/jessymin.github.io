@@ -8,9 +8,10 @@ category : 'python'
 
 연말을 맞아 그동안 미뤄뒀던 python을 바짝 해보기로 했다. DataCamp의 Intermediate python을 공부한 내용을 정리해본다.
 
-Intermediate R과는 달리 초급 내용이 섞여있어서 전에 Codecademy에서 훑었던 내용과 겹치긴 한다. 하지만 R을 해보니, 기본이 튼튼하지 않으면 나중에 뭘 모를 때 검색하기도 애매했던 것 같다. 어쨌든 기초수업은 마지막이라 생각하고 꼼꼼히 들어보려 한다.
+<br>
+Intermediate python은 Intermediate R과는 달리 초급 내용이 섞여있어서 전에 Codecademy에서 훑었던 내용과 겹치긴 한다. 하지만 R을 해보니, 기본이 튼튼하지 않으면 나중에 뭘 모를 때 검색하기도 애매했던 것 같다. 어쨌든 기초수업은 마지막이라 생각하고 꼼꼼히 들어보려 한다.
 
-DataCamp의 파이썬 기초강의 목차는 다음과 같다. (순서가 좀 이상하다. 뜬금없이 시각화는 왜 나오다 말았을까...)
+DataCamp의 파이썬 기초에 해당하는 강의 목차는 다음과 같다. (순서가 좀 이상하다. 뜬금없이 시각화는 왜 나오다 말았을까...)
 
 
 **Intro to python for data science**
