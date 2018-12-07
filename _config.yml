@@ -57,7 +57,22 @@ descriptions:
   - cat: R
     desc: ""
 
+  - cat: python
+    desc: ""
+
+  - cat: SQL
+    desc: ""
+
   - cat: Machine Learning
+    desc: ""
+
+  - cat: Essay
+    desc: ""
+
+  - cat: Customer Research
+    desc: ""
+
+  - cat: Research
     desc: ""
 
 # Social icons and sharing options
