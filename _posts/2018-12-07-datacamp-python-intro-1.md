@@ -184,7 +184,6 @@ europe['spain']['population']
 #### Dataframe 생성하기
 - dictionary에서 변환 : `pd.DataFrame()`
 
-
 ```python
 import pandas as pd
 cars = pd.DataFrame(my_dict)
@@ -193,6 +192,7 @@ cars = pd.DataFrame(my_dict)
 row_labels = ['US', 'AUS', 'JAP', 'IN', 'RU', 'MOR', 'EG']
 cars.index = row_labels
 ```
+
 
 - csv를 읽어들여 변환
 
@@ -203,6 +203,7 @@ cars = pd.read_csv("path/cars.csv")
 # 첫 번째 컬럼을 row label로 사용
 cars = pd.read_csv('cars.csv', index_col = 0)
 ```
+
 
 <br>
 
