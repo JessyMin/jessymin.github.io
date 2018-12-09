@@ -45,14 +45,15 @@ DataCamp의 파이썬 기초에 해당하는 강의 목차는 다음과 같다. 
   - end : exclusive
 
 - 추가 & 삭제
+
 ```python
 # 추가
 list = list + ['n1', 'n2']
 
 # 삭제
 del(list[-1])
-
 ```
+
 
 <br>
 
@@ -62,10 +63,12 @@ del(list[-1])
 - 그로 인한 단점은,
     - 서로 다른 데이터 타입을 담을 수 없다. 억지로 만들면 type coercion됨.
     - 산술 연산자(+, -, /, \*)의 용법이 다르다.
+
 ```python
     In [1]: np.array([True, 2, 3])
     Out[1]: array([1, 2, 3])
 ```
+
 - numpy
 ```python
     import numpy as np
@@ -128,6 +131,8 @@ Out[1]: True
 ```
 
 - Update / Remove
+
+
 ```python
 # 추가
 dict_name["key_n"] = value_n
@@ -139,6 +144,7 @@ europe["germany"] = "berlin"
 # 삭제
 del(europe["sealand"])
 ```
+
 
 - 활용
     - unique key를 가진 lookup table이 필요할 때
@@ -173,6 +179,7 @@ europe['spain']['population']
   - Built on Numpy
   - high performance / easy to use
 
+<br>
 
 #### Dataframe 생성하기
 - dictionary에서 변환 : `pd.DataFrame()`
@@ -193,6 +200,8 @@ cars = pd.read_csv("path/cars.csv")
 # 첫 번째 컬럼을 row label로 사용
 cars = pd.read_csv('cars.csv', index_col = 0)
 ```
+
+<br>
 
 #### Index data
 - Column Access
