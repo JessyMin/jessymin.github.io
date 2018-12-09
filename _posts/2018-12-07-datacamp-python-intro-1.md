@@ -183,6 +183,8 @@ europe['spain']['population']
 
 #### Dataframe 생성하기
 - dictionary에서 변환 : `pd.DataFrame()`
+
+
 ```python
 import pandas as pd
 cars = pd.DataFrame(my_dict)
@@ -193,6 +195,7 @@ cars.index = row_labels
 ```
 
 - csv를 읽어들여 변환
+
 ```python
 import pandas as pd
 cars = pd.read_csv("path/cars.csv")
