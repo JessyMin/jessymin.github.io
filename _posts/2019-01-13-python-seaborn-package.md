@@ -32,7 +32,6 @@ seaborn은 변수 간의 관계를 분석하기 위한 함수들을 `relplot()`�
 **1) Scatter plot**
 
 - `relplot()` : 기본적인 scatter plot을 그려줌
-
 ```python
 # 패키지 Importing은 이하 생략
 import seaborn as sns
@@ -45,7 +44,6 @@ sns.relplot(x='total_bill', y='tip', data=tips)
   - 데이터의 subset별로 선형회귀를 적용한다. (by applying a groupby operation)
   - `hue` argument를 통해 범주형 변수를 지정
   - `pallette` argument를 통해 그룹별 컬러링할 팔레트 설정 (pal)
-
 ```python
 sns.relplot('total_bill', 'tip', tips, hue='smoker)
 ```
@@ -54,12 +52,12 @@ sns.relplot('total_bill', 'tip', tips, hue='smoker)
   - `row` : n개의 row로 배치
   - `col` : n개의 column으로 배치
   - 둘 다 적용하면 n x n grid가 됨
-
 ```python
-sns.relplot('total_bill', 'tip', tips, col='sex', row='smoker')
+sns.relplot('total_bill', 'tip', tips,
+    col='sex', row='smoker')
 ```
 
-**2) linear regression**
+**2) Linear regression**
   - `lmplot()` : scatter plot + 회귀선
   - 회귀선만 그리고 싶다면 `scatter=None`으로 설정한다.
 ```python
@@ -73,7 +71,6 @@ sns.lmplot(x='total_bill', y='tip', data=tips)
 - 시간축에 따른 변화의 추이를 살펴볼 때 사용
 - `lineplot()`
 - 또는 `relplot()`에서 `kind='line'`로 셋팅
-
 ```python
 fmri = sns.load_dataset("fmri")
 
@@ -116,13 +113,16 @@ sns.catplot(x='day', y='total_bill', hue='smoke', kind='swarm', data=tips)
 ```
 
 **3) violinplot()**
-swarmplot에 `hue`를 적용한 경우, 두 그룹이 섞여서 표현된다. violinplot은 이 둘을 분리해서 표시한다.
+- swarmplot에 `hue`를 적용한 경우, 두 그룹이 섞여서 표현된다. violinplot은 이 둘을 분리해서 표시한다.
 
 ```python
 sns.catplot('day','total_bill', hue='time', kind='violin', data=tips)
 ```
 
-아래 코드로 그리면 x축의 높이, 범례의 위치 등에서 미묘하게 가독성과 시각적 완성도가 떨어진다.
+**catplot( ) vs. violinplot( )**
+- 아래 코드로 그리면 범례의 스타일 및 위치, x축의 높이 등 전반적인 스타일의 가독성과 시각적 완성도가 떨어진다.
 ```python
 sns.violinplot('day','total_bill', hue='time',data=tips)
 ```
+- 테스트해보니 `swarmplot()` 등도 마찬가지
+- 가급적 `catplot()`의 `kind` argument를 사용하는 게 좋을 듯하다.
