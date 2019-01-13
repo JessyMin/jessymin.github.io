@@ -71,13 +71,10 @@ sns.lmplot(x='total_bill', y='tip', data=tips)
 - 시간축에 따른 변화의 추이를 살펴볼 때 사용
 - `lineplot()`
 - 또는 `relplot()`에서 `kind='line'`로 셋팅
+
 ```python
 fmri = sns.load_dataset("fmri")
 
-# lineplot()
-sns.lineplot(x="timepoint", y="signal", data=fmri)
-
-# relplot()
 sns.relplot(x='timepoint', y='signal', kind='line', data=fmri)
 ```
 
@@ -107,14 +104,12 @@ sns.catplot(x='day', y='total_bill', data=tips)
 **2) swarmplot()**  
 - observation들이 서로 전혀 overlapping되지 않도록 알고리즘을 적용하는 `swarmplot()`도 있다.
   - 모든 값이 겹치지 않고 펼쳐지므로 3번째 변수를 적용해 분석하기 좋다.
-
 ```python
 sns.catplot(x='day', y='total_bill', hue='smoke', kind='swarm', data=tips)
 ```
 
 **3) violinplot()**
 - swarmplot에 `hue`를 적용한 경우, 두 그룹이 섞여서 표현된다. violinplot은 이 둘을 분리해서 표시한다.
-
 ```python
 sns.catplot('day','total_bill', hue='time', kind='violin', data=tips)
 ```
