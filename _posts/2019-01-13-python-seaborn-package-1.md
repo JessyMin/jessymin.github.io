@@ -1,11 +1,20 @@
+---
+layout : post
+comments : true
+title : "python 시각화: Seaborn 패키지(1)"
+date : 2019-01-13
+category : 'python'
+---
+
 
 python을 공부하는 초반이라, 탐색적 분석에 필요한 시각화 방법들을 익히고 있다. seaborn은 EDA를 효율적으로 할 수 있다는 점에서 무척 매력적인 패키지다. 그래서 처음으로 공식 문서를 샅샅이 읽어보며 정리해본다.
+
+---
 
 참조 : https://seaborn.pydata.org/introduction.html
 
 #### 왜 만들어졌나?
 - 데이터를 탐색하고 이해하는 과정에서 visualization이 핵심 역할을 하게끔 하려고
-
 <br>
 
 #### 특징
@@ -27,7 +36,7 @@ python을 공부하는 초반이라, 탐색적 분석에 필요한 시각화 방
 
 ## 1. 연속형 변수 x 연속형 변수
 
-seaborn은 변수 간의 관계를 분석하기 위한 함수들을 `relplot()`으로 묶어서 제공하고 있다. 
+seaborn은 변수 간의 관계를 분석하기 위한 함수들을 `relplot()`으로 묶어서 제공하고 있다.
 
 `relplot()`
  - 지원하는 plot의 종류 : scatter plot과 line plot
@@ -36,8 +45,8 @@ seaborn은 변수 간의 관계를 분석하기 위한 함수들을 `relplot()`�
 
 **1) Scatter plot**
 
- - 산점도 
- - 두 변수 간의 관계를 시각화한다. 
+ - 산점도
+ - 두 변수 간의 관계를 시각화한다.
 
 
 ```python
@@ -54,7 +63,7 @@ plt.show()
 ```
 
 
-![png](output_3_0.png)
+![png](./assets/images/2019-01-13/output_3_0.png)
 
 
 **2) Linear regression**
@@ -62,7 +71,7 @@ plt.show()
     - `hue`, `col`, `row`를 지원하지 않음
     - 회귀선만 그리고 싶다면 `scatter=None`으로 설정
 - `lmplot()` : regplot()과 FacetGrid를 결합한 것
-    - `hue`, `col`, `row`를 지원함 
+    - `hue`, `col`, `row`를 지원함
 
 
 
@@ -76,12 +85,12 @@ plt.show()
 
 
 
-![png](output_5_1.png)
+![png](./assets/images/2019-01-13/output_5_1.png)
 
 
 
 ```python
-# 결제금액과 팁 간의 상관관계가 흡연자/비흡연자별로 차이가 있는가? 
+# 결제금액과 팁 간의 상관관계가 흡연자/비흡연자별로 차이가 있는가?
 sns.lmplot(x="total_bill", y="tip", hue="smoker", data=tips)
 plt.show()
 ```
@@ -91,7 +100,7 @@ plt.show()
 
 
 
-![png](output_6_1.png)
+![png](./assets/images/2019-01-13/output_6_1.png)
 
 
 
@@ -105,7 +114,7 @@ plt.show()
 
 
 
-![png](output_7_1.png)
+![png](./assets/images/2019-01-13/output_7_1.png)
 
 
 **3) Line plot**
@@ -122,7 +131,7 @@ plt.show()
 ```
 
 
-![png](output_9_0.png)
+![png](./assets/images/2019-01-13/output_9_0.png)
 
 
 
@@ -138,7 +147,7 @@ plt.show()
 
 
 
-![png](output_10_1.png)
+![png](./assets/images/2019-01-13/output_10_1.png)
 
 
 
@@ -152,10 +161,10 @@ plt.show()
 
 R에 비해 굉장히 효율적이라고 느껴지는 부분이다. 세부적인 설정도 default로 셋팅해둬 작업이 많이 자동화된다.
 
- - 한 개 이상의 범주형 변수를 
- - plot과 FacetGrid를 리턴한다. 
+ - 한 개 이상의 범주형 변수를
+ - plot과 FacetGrid를 리턴한다.
 
- 
+
 다음과 같은 axes-level function을 지원한다.
 
 scatter plot
@@ -174,7 +183,7 @@ Estimate plot
 
 
 **1) catplot(kind=strip)**
- - jitter가 디폴트로 적용되어 있다. 
+ - jitter가 디폴트로 적용되어 있다.
  - 비활성화 : `jitter=False`
 
 
@@ -185,11 +194,11 @@ plt.show()
 ```
 
 
-![png](output_13_0.png)
+![png](./assets/images/2019-01-13/output_13_0.png)
 
 
 **2) swarmplot()**  
- - 값들이 서로 overlapping되지 않도록 알고리즘을 적용한다. 
+ - 값들이 서로 overlapping되지 않도록 알고리즘을 적용한다.
  - 모든 값이 겹치지 않고 펼쳐지므로 추가적인 변수를 적용해 분석하기 좋다.
 
 
@@ -199,7 +208,7 @@ plt.show()
 ```
 
 
-![png](output_15_0.png)
+![png](./assets/images/2019-01-13/output_15_0.png)
 
 
 **3) violinplot()**
@@ -216,7 +225,7 @@ plt.show()
 
 
 
-![png](output_17_1.png)
+![png](./assets/images/2019-01-13/output_17_1.png)
 
 
 ## 3. 어떤 함수를 쓸 것인가?
@@ -224,8 +233,8 @@ plt.show()
 ### relplot() vs. violinplot()
 
 - lineplot(), violinplot() 등 axes-level 함수를 사용하는 것보다 catplot(), relplot() 등 Figure-level interface의 스타일 셋팅이 다름
-- 범례의 스타일 및 위치, x축의 높이, 범례/plot 영역 테두리 등 
-- 가독성과 심미성을 위해 relplot(), catplot()에 `kind` argument를 사용하는 게 좋을 듯 
+- 범례의 스타일 및 위치, x축의 높이, 범례/plot 영역 테두리 등
+- 가독성과 심미성을 위해 relplot(), catplot()에 `kind` argument를 사용하는 게 좋을 듯
 
 
 ```python
@@ -233,22 +242,7 @@ plt.show()
 sns.violinplot('day','total_bill', hue='time', data=tips)
 plt.show()
 ```
-
-    /Users/jessymin/anaconda3/lib/python3.7/site-packages/scipy/stats/stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
-      return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
-
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x1a21024240>
-
-
-
-
-![png](output_20_2.png)
-
-
+![png](./assets/images/2019-01-13/output_20_2.png)
 
 ```python
 # Axis-level Function
@@ -256,12 +250,7 @@ sns.catplot('day','total_bill', hue='time', kind='violin', data=tips)
 plt.show()
 ```
 
-    /Users/jessymin/anaconda3/lib/python3.7/site-packages/scipy/stats/stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
-      return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
-
-
-
-![png](output_21_1.png)
+![png](./assets/images/2019-01-13/output_21_1.png)
 
 
 ## 4. Facet Grid
@@ -274,39 +263,21 @@ plt.show()
 
 ```python
 sns.relplot('total_bill', 'tip', hue='smoker', style='smoker', data=tips)
+plt.show()
 ```
 
+![png](./assets/images/2019-01-13/output_24_1.png)
 
 
 
-    <seaborn.axisgrid.FacetGrid at 0x1a22e4ae80>
-
-
-
-
-![png](output_24_1.png)
-
-
-
-```python
 - subplot들을 Grid로 그려서 비교
   - `row` : n개의 row로 배치
   - `col` : n개의 column으로 배치
   - 둘 다 적용하면 n x n grid가 됨
-```
 
 
 ```python
 sns.relplot('total_bill', 'tip', data=tips, col='sex', row='smoker')
 ```
 
-
-
-
-    <seaborn.axisgrid.FacetGrid at 0x1a21279fd0>
-
-
-
-
-![png](output_26_1.png)
-
+![png](./assets/images/2019-01-13/output_26_1.png)
