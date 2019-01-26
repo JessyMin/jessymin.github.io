@@ -7,12 +7,8 @@ category : 'python'
 ---
 
 
- R을 쓰는 중이면서 python을 배우려 할 때 딱 맞는 강의를 찾아냈다. DataCamp의 'Python for R users'라는 코스다. 입문자를 위한 코스들과 달리 좀 더 압축적으로 빠르게 진도를 뺀다. 중간중간 R과 비교해주는 포인트도 좋다.
-
----
-
-링크 : https://campus.datacamp.com/courses/python-for-r-users
-
+ R을 쓰는 중이면서 python을 배우려 할 때 딱 맞는 강의를 찾아냈다. DataCamp의 '<a href='https://campus.datacamp.com/courses/python-for-r-users'>Python for R users</a>'라는 코스다. 입문자를 위한 코스들과 달리 좀 더 압축적으로 빠르게 진도를 뺀다. 중간중간 R과 비교해주는 포인트도 좋다.
+<br>
 강사 특성인지는 모르겠지만 설명도 더 쏙들어오게 해주는 것 같다. 하는 김에 R문법과 비교하며 Pandas의 기초적인 부분을 짚어보았다.  
 
 ---
@@ -65,6 +61,7 @@ tips[['day','time']]
 - `.iloc` : row index 사용
 - 위의 두 accessor는 column에 액세스할 때도 사용 가능
 - python의 인덱싱은 R과 달리 0에서 시작함
+
 ```python
 # 첫번째 행 출력하기
 # python
@@ -191,6 +188,7 @@ tips.smoker = tips.smoker.str.upper()
 > tips$smoker <- toupper(tips$smoker)
 ```
 
+<br>
 
 ### 3. Missing Value
 
@@ -225,6 +223,7 @@ print(tips['total_bill'].fillna(tbill_mean))
 
 ```
 
+<br>
 
 ### 중간 정리/느낀 점
 - 나중에 python을 배울 생각이 있다면, R을 처음 배울 때 boolean indexing 부분을 탄탄히 하면 좋을 것 같다.
