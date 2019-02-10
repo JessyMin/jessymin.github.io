@@ -1,3 +1,12 @@
+---
+layout : post
+comments : true
+title : "python 시각화: Stacked Bar Chart 그리기"
+date : 2019-02-10
+category : 'python'
+---
+
+
 
 python을 빠르게 익히기 위해 DS스쿨의 실전 데이터분석가 과정을 1월에 수강했었다.
 
