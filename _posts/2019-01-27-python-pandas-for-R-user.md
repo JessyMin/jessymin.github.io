@@ -227,6 +227,5 @@ print(tips['total_bill'].fillna(tbill_mean))
 
 ### 중간 정리/느낀 점
 - 나중에 python을 배울 생각이 있다면, R을 처음 배울 때 boolean indexing 부분을 탄탄히 하면 좋을 것 같다.
-- 쉽다는 이유만으로 `dplyr` 패키지만 사용해서 manipulation을 배우면, python을 배울 때 너무 새롭게 느껴질 수 있을 듯 하다.
-- 그런 점에서 Coursera-Johns Hopkins Uiv.의 데이터 사이언스 수업으로 R을 시작했던 점이 도움 되었다.
-- 나도 어느 시점부턴 dplyr만 쓰게 되었지만, 데이터셋이 커지면 퍼포먼스 때문에 `data.table` 패키지를 쓰게 될 수도 있을 듯하니, 쉬운 문법에만 익숙해지지 말아야겠다.
+- 그런 점에서 Coursera-Johns Hopkins Uiv.의 데이터 사이언스 수업으로 R을 시작했던 점이 도움 되었다. 하지만 어느 순간부터 쉽다는 이유로 manipulation에 `dplyr` 패키지를 주로 사용해온 점이 아쉽다.
+- 데이터셋이 커지면 퍼포먼스 측면에서 `data.table` 패키지가 유리한 점이 있는 듯 하니, 좀 더 python 문법에 가까운 `data.table`도 가끔 써봐야겠다.

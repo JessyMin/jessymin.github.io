@@ -63,7 +63,7 @@ plt.show()
 ```
 
 
-![png](./assets/images/2019-01-13/output_3_0.png)
+<img src="https://raw.githubusercontent.com/jessymin/jessymin.github.io/tree/master/assets/images/2019-01-13/output_3_0.png>
 
 
 **2) Linear regression**
@@ -80,11 +80,6 @@ sns.regplot(x='total_bill', y='tip', data=tips)
 plt.show()
 ```
 
-    /Users/jessymin/anaconda3/lib/python3.7/site-packages/scipy/stats/stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
-      return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
-
-
-
 ![png](./assets/images/2019-01-13/output_5_1.png)
 
 
@@ -95,24 +90,13 @@ sns.lmplot(x="total_bill", y="tip", hue="smoker", data=tips)
 plt.show()
 ```
 
-    /Users/jessymin/anaconda3/lib/python3.7/site-packages/scipy/stats/stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
-      return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
-
-
-
 ![png](./assets/images/2019-01-13/output_6_1.png)
-
 
 
 ```python
 sns.lmplot(x="total_bill", y="tip", data=tips)
 plt.show()
 ```
-
-    /Users/jessymin/anaconda3/lib/python3.7/site-packages/scipy/stats/stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
-      return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
-
-
 
 ![png](./assets/images/2019-01-13/output_7_1.png)
 
@@ -141,11 +125,6 @@ fmri = sns.load_dataset("fmri")
 sns.lineplot(x='timepoint', y='signal', data=fmri, hue='event', style='event')
 plt.show()
 ```
-
-    /Users/jessymin/anaconda3/lib/python3.7/site-packages/scipy/stats/stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
-      return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
-
-
 
 ![png](./assets/images/2019-01-13/output_10_1.png)
 
@@ -219,11 +198,6 @@ plt.show()
 sns.catplot('day','total_bill', hue='time', kind='violin', data=tips)
 plt.show()
 ```
-
-    /Users/jessymin/anaconda3/lib/python3.7/site-packages/scipy/stats/stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
-      return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
-
-
 
 ![png](./assets/images/2019-01-13/output_17_1.png)
 
