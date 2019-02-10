@@ -63,7 +63,7 @@ plt.show()
 ```
 
 
-<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_3_0.png" width=350>
+<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_3_0.png" width="350">
 
 
 **2) Linear regression**
@@ -80,7 +80,7 @@ sns.regplot(x='total_bill', y='tip', data=tips)
 plt.show()
 ```
 
-<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_5_1.png" width=350>
+<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_5_1.png" width="350">
 
 
 ```python
@@ -89,7 +89,7 @@ sns.lmplot(x="total_bill", y="tip", hue="smoker", data=tips)
 plt.show()
 ```
 
-<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_6_1.png" width=350>
+<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_6_1.png" width="350">
 
 
 ```python
@@ -97,7 +97,7 @@ sns.lmplot(x="total_bill", y="tip", data=tips)
 plt.show()
 ```
 
-<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_7_1.png" width=350>
+<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_7_1.png" width="350">
 
 
 **3) Line plot**
@@ -113,7 +113,7 @@ sns.relplot(x='timepoint', y='signal', kind='line', data=fmri, hue='event', styl
 plt.show()
 ```
 
-<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_9_0.png" width=350>
+<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_9_0.png" width="350">
 
 
 
@@ -124,7 +124,7 @@ sns.lineplot(x='timepoint', y='signal', data=fmri, hue='event', style='event')
 plt.show()
 ```
 
-<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_10_1.png" width=350>
+<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_10_1.png" width="350">
 
 
 
@@ -170,7 +170,7 @@ sns.catplot('day','total_bill', data=tips)
 plt.show()
 ```
 
-<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_13_0.png" width=350>
+<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_13_0.png" width="350">
 
 
 **2) swarmplot()**  
@@ -183,7 +183,7 @@ sns.catplot('day','total_bill', hue='time', kind='swarm', data=tips)
 plt.show()
 ```
 
-<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_15_0.png" width=350>
+<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_15_0.png" width="350">
 
 
 **3) violinplot()**
@@ -195,7 +195,7 @@ sns.catplot('day','total_bill', hue='time', kind='violin', data=tips)
 plt.show()
 ```
 
-<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_17_1.png" width=350>
+<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_17_1.png" width="350">
 
 
 
@@ -214,7 +214,7 @@ sns.violinplot('day','total_bill', hue='time', data=tips)
 plt.show()
 ```
 
-<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_20_2.png" width=350>
+<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_20_2.png" width="350">
 
 
 ```python
@@ -223,7 +223,7 @@ sns.catplot('day','total_bill', hue='time', kind='violin', data=tips)
 plt.show()
 ```
 
-<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_21_1.png" width=350>
+<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_21_1.png" width="350">
 
 
 ## 4. Facet Grid
@@ -239,7 +239,7 @@ sns.relplot('total_bill', 'tip', hue='smoker', style='smoker', data=tips)
 plt.show()
 ```
 
-<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_24_1.png" width=350>
+<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_24_1.png" width="350">
 
 
 
@@ -253,4 +253,4 @@ plt.show()
 sns.relplot('total_bill', 'tip', data=tips, col='sex', row='smoker')
 ```
 
-<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_26_1.png" width=350>
+<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_26_1.png" width="350">
