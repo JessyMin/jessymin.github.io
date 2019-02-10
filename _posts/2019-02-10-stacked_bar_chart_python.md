@@ -43,92 +43,8 @@ df = pd.DataFrame(list(rows), columns=headers)
 
 df
 ```
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Year</th>
-      <th>Month</th>
-      <th>Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>2000</td>
-      <td>Jan</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2000</td>
-      <td>Feb</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2000</td>
-      <td>Mar</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>2001</td>
-      <td>Jan</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>2001</td>
-      <td>Feb</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>2001</td>
-      <td>Mar</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>2002</td>
-      <td>Jan</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>2002</td>
-      <td>Feb</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>2002</td>
-      <td>Mar</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
 
 데이터를 피봇해준다.
-
 
 ```python
 # 테이블 피벗하기
@@ -136,63 +52,6 @@ pivot_df = df.pivot(index='Year', columns='Month', values='Value')
 pivot_df = pivot_df[['Jan','Feb','Mar']].copy()
 pivot_df
 ```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Month</th>
-      <th>Jan</th>
-      <th>Feb</th>
-      <th>Mar</th>
-    </tr>
-    <tr>
-      <th>Year</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2000</th>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>2001</th>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>2002</th>
-      <td>7</td>
-      <td>8</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
 
 `[['Jan','Feb','Mar']]` 부분은 월별로 순서를 정렬하게 위해 적용했다.
 
@@ -205,9 +64,7 @@ import matplotlib.pyplot as plt
 pivot_df.plot.bar(stacked=True, figsize=(10,7))
 
 ```
-
-
-![png](output_9_1.png)
+<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-02-10/output_9_1.png" width="350">
 
 
 그렇데 이렇게만 그리면 문제가 있다. 가독성 측면에서 legend와 bar segment의 순서가 반대로 표시되는 것이다.
@@ -230,8 +87,7 @@ pivot_df.plot.bar(stacked=True, legend='reverse', figsize=(10,7))
 
 ```
 
-
-![png](output_11_1.png)
+<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-02-10/output_11_1.png" width="350">
 
 
 시각화의 내용물을 직관적으로 파악할 수 있게 범례의 순서가 바뀌었다.
@@ -288,8 +144,8 @@ plt.xticks(ind, ('G1', 'G2', 'G3', 'G4', 'G5'))
 plt.show()
 ```
 
+<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-02-10/output_17_0.png" width="350">
 
-![png](output_17_0.png)
 
 
 역시 legend와 bar segment의 순서를 일치시켜 가독성을 높이기 위해, 순서상 나중에 그려준 Upper를 legend에선 앞쪽에 위치시켰다.
