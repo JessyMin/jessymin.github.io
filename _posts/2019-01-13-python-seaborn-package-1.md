@@ -63,7 +63,7 @@ plt.show()
 ```
 
 
-<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_3_0.png">
+<img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_3_0.png" width=350>
 
 
 **2) Linear regression**
