@@ -128,10 +128,6 @@ plt.show()
 
 
 
-```python
-
-```
-
 ## 2. 범주형 변수 x 연속형 변수
 
 범주형 변수를 기준으로 category별 subset 간의 경향을 비교하려면 `catplot()`을 사용한다. 문서에서는 이를 '범주형 plot을 FacetGrid에 그리기 위한 Figure-level interface'라고 설명하고 있다.  
@@ -198,6 +194,8 @@ plt.show()
 <img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_17_1.png" width="350">
 
 
+<br>
+
 
 ## 3. 어떤 함수를 쓸 것인가?
 
@@ -224,6 +222,9 @@ plt.show()
 ```
 
 <img src="https://raw.githubusercontent.com/JessyMin/jessymin.github.io/master/assets/images/2019-01-13/output_21_1.png" width="350">
+
+
+<br>
 
 
 ## 4. Facet Grid
