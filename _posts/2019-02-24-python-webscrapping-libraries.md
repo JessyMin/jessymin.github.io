@@ -46,8 +46,13 @@ https://blog.michaelyin.info/web-scraping-framework-review-scrapy-vs-selenium/
 
 ### 1. Beautifulsoup
 - 웹스크래핑에 가장 널리 쓰이는 python 라이브러리
-- HTML/XML 파일로부터 데이터를 추출
-- parser는 원하는 것을 쓰면 된다. beautifulsoup을 이용해 parser tree로부터 필요한 데이터를 추출할 수 있다.
+- HTML/XML 파일을 파싱 / 데이터 추출
+  - parser는 원하는 것을 사용한 뒤 beautifulsoup을 이용해 parser tree로부터 필요한 데이터를 추출할 수 있음
+- 웹페이지를 다운로드할 때 `urlib2` 나 `requests`를 사용해야 함
+- 배우기가 매우 쉽다. 낮은 러닝커브.
+- 생태계는 잘 발달되어 있지 않음. 관련 프로젝트나 플러그인 적음.
+- 속도를 향상시키려면 `multiprocessing` import 필요
+- 참고 : <a href="https://blog.michaelyin.info/scrapy-tutorial-1-scrapy-vs-beautiful-soup/"> Scrapy Tutorial #1: Scrapy VS Beautiful Soup</a>
 
 <br>
 
@@ -71,16 +76,33 @@ https://blog.michaelyin.info/web-scraping-framework-review-scrapy-vs-selenium/
 <br>
 
 ### 3. Scrapy  
-- `spider`라는 크롤러를 만들기 위한 웹크롤링 프레임워크
-- 비동기 네트워킹 라이브러리인 Twisted에 built on 되어, 퍼포먼스가 매우 뛰어남
 
+- `spider`라는 크롤러를 만들기 위한 웹크롤링 프레임워크
+  - Django를 다뤄봤다면 유리하다.
+  - 프레임워크를 다뤄본 경험이 없다면 다소 부담스러울 수 있다.
+- 가파른 러닝커브
+  - Scrapy 전문가가 되려면 좀 많이 노력해야 함
+  - 하지만 학습비용이 아깝지 않을 만큼, 확장성이 뛰어남
+- 웹사이트를 스크래핑하면서 발생하는 이슈들에 대한 내장 솔루션 제공
+  - 리다이렉션, 특정 타입의 리퀘스트를 반복하기, HTTP 캐싱, 중복된 리퀘스트 필터링하기, 여러 리퀘스트에 대해 세션/쿠키 보존하기 등
+  - 참고 : <a href="https://www.quora.com/How-do-I-choose-between-using-Beautiful-Soup-or-Scrapy-It-seems-using-frameworks-like-Scrapy-could-address-many-issues-like-IP-blocking-and-data-storing-easier-than-using-a-pure-parsing-library-like-Beautiful-Soup"> How do I choose between using Beautifulsoup or Scray? </a>
+- 비동기 네트워킹 라이브러리인 Twisted에 built on 되어, 퍼포먼스가 매우 뛰어남
+  - 같은 작업을 할 때 Selenium에 비해 매우 빠를 수 있음  
+- 데이터 추출에 CSS selector와 XPath 모두 지원
+  - Scrapy spider 내에 beautifulsoup 사용 가능
 - javascript를 건드려야 한다면,
   - 번거롭지만 방법이 없는 것은 아님
   - 긁어올 데이터가 많은 ajax/pjax 리퀘스트 후에 나타나는 경우라면 selenium을 쓰는 걸 권장
+
+<br>
+
+
+
+<br>
 
 
 ### 마치며
 
 - 당장의 업무에는 이미 손대기 시작한 selenium으로 충분할 것 같다.
 - 하지만 아무래도 장기적인 관점에서 scrapy를 배워두면 좋을 것 같다. SNS나 앱 리뷰 등을 모니터링하려면 scrapy로 파이프라인을 구축해두는 게 필요할 듯.
-- 지금 내가 필요로 하는 웹페이지의 크롤링에 Javascript가 영향을 미치는지 확인하기 위해, beautifulsoup으로 살짝만 트라이해봐야 겠다. 
+- 지금 내가 필요로 하는 웹페이지의 크롤링에 Javascript가 영향을 미치는지 확인하기 위해, beautifulsoup으로 살짝만 트라이해봐야 겠다.
