@@ -72,24 +72,43 @@ driver.get(url)
 
 <br>
 
+#### 3. 브라우저 컨트롤하기
 
-#### 3. 스크롤다운
+#### 1) 버튼 클릭
+크롤링하려는 내용이 여러 페이지에 걸쳐 있을 때, 페이지네이션에 다음 페이지로 이동하는 버튼을 클릭하는 방법이다.
+
+```python
+# 페이지네이션이 있는 웹문서
+url = "http://www.elkay.com/sinks/kitchen-sinks#q=|100|0|1|"
+driver.get(url)
+
+# 버튼 클릭하기 ( class=right_arrow)
+driver.find_element_by_class_name("right_arrow").click()
+```
+
+<br>
+
+
+#### 2) 스크롤다운
 
 스크롤다운에는 크게 3가지 시나리오가 있다.
 (참고 : https://www.guru99.com/scroll-up-down-selenium-webdriver.html)
 
-1. 특정 픽셀까지 스크롤다운 하기 (by pixel)
+**- 특정 픽셀까지 스크롤다운 하기 (by pixel)**
 ``` python
 driver.execute_script(“window.scrollTo(0, Y);”)
 ```
+<br>
 
-2. 맨 아래까지 스크롤다운 하기 (bottom of the page)
+**- 맨 아래까지 스크롤다운 하기 (bottom of the page)**
+
 ```python
 driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-
 ```
+<br>
 
-3. 특정 요소가 보일 때까지 스크롤다운 하기 (by the visibility of the element)
+**- 특정 요소가 보일 때까지 스크롤다운 하기 (by the visibility of the element)**
+
 ``` python
 element = driver.find_element_by_class_name("improve-site")
 
@@ -104,7 +123,7 @@ WebElement element = driver.findElement(By.id("id_of_element"));
 ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
 Thread.sleep(500);
 ```
-python에서 javascript를 실행하려니 생기는 복잡함인데, 위의 1~3번 코드로 실행해도 모두 문제가 없다.
+python에서 javascript를 실행하려니 생기는 복잡함인데, 위의 코드로 실행해도 모두 문제가 없다.
 
 <br>
 
@@ -118,7 +137,7 @@ python에서 javascript를 실행하려니 생기는 복잡함인데, 위의 1~3
 
 이 사이트 내에서 여러 상품을 크롤링해야 하는 상황이라 자동화할 수 있는 방법을 고민하고 있다.
 
-2번 방법을 사용해보니, 브라우저 상으로는 맨 아래까지 바로 이동한 뒤, 상품 리스트가 계속 갱신되는 걸 알 수 있었다. 문제는 만약 처음 보는 웹페이지라면 몇 초나 대기한 뒤 크롤링해야 하는지 판단할 수 없다는 점이다.
+페이지 맨 아래까지 스크롤다운하는 두 번째 방법을 사용하면, 브라우저 상으로는 맨 아래까지 바로 이동한 뒤 상품 리스트가 자동으로 계속 갱신된다. 문제는 만약 처음 보는 웹페이지라면 몇 초나 대기한 뒤 크롤링해야 하는지 판단할 수 없다는 점이다.
 
 그래서 리스트가 갱신되는 기준이 되는 element가 보일 때까지 스크롤다운하는 방식에 loop를 적용해보려 한다. 모든 상품이 로딩되었고 더 이상 리스트 갱신이 일어나지 않는다는 걸 어떻게 판별할지가 이번 주 작업 내용이 될 듯 하다.
 
