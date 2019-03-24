@@ -17,7 +17,8 @@ category : 'python'
 - 네이버 뉴스에서 브랜드 관련 보도자료 수집
 - 네이버 카페에서 검색어로 특정 카페와 게시판 선택, 해당 게시글 수집하기
 - 인스타그램에서 검색어로 해시태그 및 이미지 수집하기
-(출처 : <a href="https://www.fastcampus.co.kr/mktg_camp_crawling/">패스트캠퍼스, 인사이트를 찾는 고객반응 수집 자동화 CAMP 커리큘럼</a>)
+<br>
+출처 : <a href="https://www.fastcampus.co.kr/mktg_camp_crawling/">패스트캠퍼스, 인사이트를 찾는 고객반응 수집 자동화 CAMP 커리큘럼</a>
 
 그래서 마케터나 그로스해커를 타겟으로 하는 커리큘럼들을 교재삼아 배워보기로 했다. 현재 내 업무에선 ad-hoc 분석이 주를 이루지만, 지정한 업무자동화라면 자동실행이 핵심이니 어떻게 하는지를 알아보기로 했다.
 <br>
@@ -57,15 +58,15 @@ category : 'python'
 
 슬랙 챗봇을 사용하기 위한 과정이 필요하다. 아래 글을 참고했다.
 
-- <a href="https://namkisec.tistory.com/entry/%EB%B3%B4%EC%95%88%EA%B8%B0%EC%82%AC-%EB%89%B4%EC%8A%A4-%ED%81%AC%EB%A1%A4%EB%A7%81-%ED%9B%84-%EC%B1%97%EB%B4%87%EC%97%90-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%8D%BC%EB%B6%93%EA%B8%B0Slack">보안기사 뉴스 크롤링 후 챗봇에 데이터 퍼붓기(Slack)</a>
+<a href="https://namkisec.tistory.com/entry/%EB%B3%B4%EC%95%88%EA%B8%B0%EC%82%AC-%EB%89%B4%EC%8A%A4-%ED%81%AC%EB%A1%A4%EB%A7%81-%ED%9B%84-%EC%B1%97%EB%B4%87%EC%97%90-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%8D%BC%EB%B6%93%EA%B8%B0Slack">보안기사 뉴스 크롤링 후 챗봇에 데이터 퍼붓기(Slack)</a>
 
-1) 슬랙 앱 생성
-2) 봇 생성
-3) Access Token 발급
-4) 슬랙봇의 권한 설정
+- 슬랙 앱 생성
+- 봇 생성
+- Access Token 발급
+- 슬랙봇의 권한 설정
 
 
-다음부터는 단순히 메시지를 보내는 간단한 버전의 코드이다.
+그 다음부터는 단순히 메시지를 보내는 간단한 버전의 코드이다.
 `test_slack.py` 파일을 만들어, 커맨드에서 실행했다. 덕분에 처음으로 jupyter notebook을 벗어나서 python을 써봤다.(패키지 설치할 때 빼고)
 
 ```python
@@ -119,8 +120,8 @@ smtp.quit()
 
 
 #### 3. 기타
-라인 메신저로 보내기
-https://tibsender.tistory.com/76
+- 라인 메신저로 보내기 (<a href="https://tibsender.tistory.com/76"> 링크 </a>)
+- 카카오톡 챗봇은 작년에 API가 막히면서 뭔가 복잡해진 듯. 아직 개인적으로만 테스트할 목적이라, 이쪽은 더 파보지 않았다.
 
 <br>
 
