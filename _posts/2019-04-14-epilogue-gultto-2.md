@@ -2,7 +2,7 @@
 layout : post
 comments : true
 title : "[회고] 글또 2기를 마치며"
-date : 2019-04-11
+date : 2019-04-14
 category : 'Essay'
 ---
 
