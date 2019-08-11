@@ -1,7 +1,7 @@
 ---
 layout : post
 comments : true
-title : "TimeSeries Data 다루기 - 제목변경 테스트"
+title : "TimeSeries Data 다루기"
 date : 2019-08-11
 category : 'python'
 ---
