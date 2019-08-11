@@ -1,7 +1,7 @@
 ---
 layout : post
 comments : true
-title : "웹크롤링 시 xpath 사용하는 법"
+title : "TimeSeries Data 다루기"
 date : 2019-08-11
 category : 'python'
 ---
@@ -104,3 +104,9 @@ import matplotlib.pyplot as plt
 data_2018 = data.loc['2018']
 plt.plot(data_2018)
 ```
+
+<br>
+
+**참고자료**
+- <a href="http://sergilehkyi.com/tips-on-working-with-datetime-index-in-pandas/"> Tips on Working with Datetime Index in pandas </a>
+- <a href="https://datascienceschool.net/view-notebook/8959673a97214e8fafdb159f254185e9/">시계열 자료 다루기 (데이터 사이언스 스쿨) </a>
