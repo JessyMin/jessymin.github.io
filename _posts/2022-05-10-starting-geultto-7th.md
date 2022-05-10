@@ -2,7 +2,7 @@
 layout: post
 comments : true
 title : "글또 7기를 시작하며"
-date : 2020-05-10
+date : 2022-05-10
 category : 'Essay'
 ---
 
