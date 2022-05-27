@@ -4,6 +4,7 @@ comments : true
 title : "데이터 시각화 라이브러리 Highcharts"
 date : 2022-05-28
 category : 'Essay'
+published: true
 ---
 
 데이터 분석을 공부하다 보면 데이터 시각화와 관련해서 python의 matplotlib, seaborn과 R의 ggplot 정도를 흔히 접하기 마련이다. 그 외에 실무자 분들의 글을 통해 D3가 유명하는 정도만 알고 있었다. 
