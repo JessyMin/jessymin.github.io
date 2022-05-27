@@ -23,6 +23,7 @@ url: "http://jessymin.github.io" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
 
+
 # Build settings
 markdown: kramdown
 paginate: 5
@@ -31,7 +32,7 @@ inter_post_navigation: false
 highlightjs_theme: "mono-blue"
   # "monokai-sublime"
   # "Color-Brewer"
-
+future: true
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives:
