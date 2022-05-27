@@ -1,7 +1,7 @@
 ---
-layout: post
+layout : post
 comments : true
-title : "데이터 시각화 라이브러리 Highchart"
+title : "데이터 시각화 라이브러리 Highcharts"
 date : 2022-05-28
 category : 'Data Visualization'
 ---
