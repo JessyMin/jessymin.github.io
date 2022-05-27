@@ -60,6 +60,9 @@ descriptions:
   - cat: python
     desc: ""
 
+  - cat: Data Visualization
+    desc: ""
+  
   - cat: SQL
     desc: ""
 
@@ -74,6 +77,7 @@ descriptions:
 
   - cat: Research
     desc: ""
+
 
 # Social icons and sharing options
 #
