@@ -64,6 +64,9 @@ descriptions:
   - cat: Data Visualization
     desc: ""
   
+   - cat: Text Analysis
+    desc: ""
+  
   - cat: SQL
     desc: ""
 
