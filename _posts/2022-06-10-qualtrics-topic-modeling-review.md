@@ -2,7 +2,7 @@
 layout: post
 comments : true
 title : "[번역] Topic Modeling in Text Analysis"
-date : 2022-06-11
+date : 2022-06-10
 category : 'Essay'
 published: true
 ---
