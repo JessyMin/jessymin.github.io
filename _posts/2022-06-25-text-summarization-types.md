@@ -3,7 +3,7 @@ layout: post
 comments : true
 title : "텍스트 요약, 활용 목적에 따라 유형별로 분류해보기"
 date : 2022-06-25
-category : 'Essay'
+category : 'Text Analysis'
 published: true
 ---
 
