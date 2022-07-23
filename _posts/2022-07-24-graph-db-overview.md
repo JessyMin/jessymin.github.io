@@ -38,22 +38,19 @@ published: true
     <image src="https://image.samsungsds.com/kr/insights/knowledge_graph_img04.jpg"><br/><br/>
     
 
-- 쿼리 방식
-  - Cyper, Gremlin 등 그래프에 특화된 쿼리 언어를 사용한다. 
-    -  예) 두 개의 키워드를 포함한 뉴스 기사를 검색하고자 할 때
-    - (:Keyword)<-[:Include]-(:Article)-[:Include]->(:Keyword)
-  - 검색을 고도화할 수 있다. 
-    - 인덱스 조회 문제나 테이블 조인 문제를 해결할 수 있다고 한다. (참고 : <a href="https://joey2the.tistory.com/m/80">Google Cloud Database Week - Day 2</a>)
-    - 시작점을 정한 뒤 연결만 따라가면 되기 때문이다. 
-  - 이 글을 보고 RDB가 동작하는 방식과의 구체적인 차이점을 이해할 수 있었다. https://suy379.tistory.com/62
-    - 물류 데이터를 가져와서 창고/공장의 위치, 운송 경로 데이터, 운송량 등을 시각화하고 있다. 
-<br/>
-
 - 저장 방식
   - 모든 데이터를 하나의 큰 저장소에 저장한다. 즉, RBD처럼 여러 개의 테이블로 쪼개놓지 않는다.
     - RBD에서 10개 이상의 테이블을 조인하면 성능저하가 발생하지만, 그래프DB는 복잡한 연산도 효율적으로 가능
     - index free adjacency
     - 고정된 스키마가 없어 스키마를 유연하게 변경할 수 있다. 
+  - 검색을 고도화할 수 있다. 
+    - 인덱스 조회 문제나 테이블 조인 문제를 해결할 수 있다고 한다. (참고 : <a href="https://joey2the.tistory.com/m/80">Google Cloud Database Week - Day 2</a>)
+    - 시작점을 정한 뒤 연결만 따라가면 되기 때문이다. 
+<br/>
+- 쿼리 방식
+  - Cyper, Gremlin 등 그래프에 특화된 쿼리 언어를 사용한다. 
+    -  예) 두 개의 키워드를 포함한 뉴스 기사를 검색하고자 할 때
+    - (:Keyword)<-[:Include]-(:Article)-[:Include]->(:Keyword)
 <br>
 <br>
 
