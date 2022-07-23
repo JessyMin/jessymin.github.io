@@ -77,13 +77,11 @@ published: true
 ####   HOW | 사용해보려면 어떻게 해야 하나?
 - 대표적인 Graph DB 업체인 Neo4j를 살펴보는 게 좋을 것 같다. (참고기사 : <a href="https://byline.network/2021/06/22-129/">그래프 DB가 뭐길래... Neo4j, 기업가치 2조원(2021.6)</a>)
 - 제공 솔루션들
-  - Neo4j Sandbox : 임시로 사용 가능한 클라우드 서비스. 생성 후 3일간 유지된다. 
-    - 참조 : https://pizzathief.oopy.io/graphdb-neo4j-introduction
+  - Neo4j Sandbox : 임시로 사용 가능한 클라우드 서비스. 생성 후 3일간 유지된다. (<a href="https://pizzathief.oopy.io/graphdb-neo4j-introduction">참조</a>>)
   - Neo4j Desktop, Enterprise Server, Community Server 중에서 다운받아 사용할 수 있다.
     - Neo4j Desktop : 셋업 방법을 보니 나같은 분석가/기획자가 써보기에는 DB연결에 어려려워 보이는데, 한번 해봐야 알 수 있을 것 같다. 다음 과제로 남겨둔다. 
   - Neo4j Bloom : 시각화 툴. 일단 써보고 싶었는데, 공식 문서를 보니 Enterprise 계정이 있어야 하는 듯 하다. (<a href=" https://neo4j.com/docs/bloom-user-guide/current/bloom-quick-start/">Bloom Quick Start</a>)
-  - Neo4j Aura : 클라우드 DB 서비스이며, Google Cloud에 연결할 수 있다. 
-    - 참고 : <a href="https://joey2the.tistory.com/m/80">Google Cloud Database Week - Day 2</a>
+  - Neo4j Aura : 클라우드 DB 서비스이며, Google Cloud에 연결할 수 있다. (<a href="https://joey2the.tistory.com/m/80">참고 : Google Cloud Database Week - Day 2</a>)
 - 결론 : 나는 간단히 구조만 파악해보고 싶은데, 우선은 Desktop을 설치해서 해봐야겠다. 
 <br>  
 <br>
@@ -95,7 +93,8 @@ published: true
   - 다만, 서로 비교할 검색어를 최대 3개까지만 입력할 수 있게 되어 있다. 
   - 성능 때문이던 구조 때문이던 유연하게 제공할 수 없는게 Graph DB와 RDB 기반으로 구현했을 때의 차이점인 것 같다. 
 - 결론 : 못하는 건 아니지만, 한계가 있어 보인다. 
-</br>
+<br>
+<br>
 
 
 #### 마무리하며
@@ -105,17 +104,18 @@ published: true
   - Google Cloud Platform 관련 세미나에서는 비정형 데이터 분석에 유리하다고 발표했던데, 한두번 시도가 아닌 상용화된 사례가 있는지 알고 싶다. 
   - https://neo4j.com/case-studies/
 - 이 조사를 하는 동안 알게 되었는데, GraphQL은 그래프 DB와는 상관없는 프론트엔드 쪽 기술이었다.. 
-  
+<br> 
 <br>
-키워드 : graph dB, graph visualizations, Neo4j 
-<br/>
 
+키워드 : graph dB, graph visualizations, Neo4j 
+<br>
+<br>
 
 #### 참고 글
 - DataCamep, <a href="https://app.datacamp.com/learn/courses/nosql-concepts">NoSQL Concepts</a>
 - <a href="https://www.samsungsds.com/kr/insights/techtoolkit_2021_knowledge_graph.html">세상 모든 것들의 연결고리, 지식 그래프 안에 있습니다</a>
 - <a href="https://rastalion.me/graph-db-%EA%B7%B8%EB%9E%98%ED%94%84-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/">Graph DB? 그래프 데이터베이스</a>
 - <a href="https://slownews.kr/82043">그래프 데이터베이스, 시장 현황과 분석 (2021.9, 슬로우 뉴스)</a>
-- Neo4j 설치방법 총정리: https://blog.naver.com/kgh9080/222771221790, 
+- Neo4j 설치방법 총정리: https://blog.naver.com/kgh9080/222771221790 
 - Neo4j 로컬 DBMS 만들기 https://blog.naver.com/kgh9080/222772603268 
 
