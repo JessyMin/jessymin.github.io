@@ -19,9 +19,7 @@ published: true
 - 실제로 데이터는 어떤 형식으로 저장하게 되나? 수집한 데이터를 RDB로 먼저 적재해 놓는다면, 어떻게 준비해두어야 그래프 DB로 옮겨가기에 수월한가? 또는 네트워크 시각화를 하기에 용이한가?
 <br>
 
-
 #### WHAT | 그래프 DB란?
-
 아래 내용은 DataCamp의 <a href="https://app.datacamp.com/learn/courses/nosql-concepts">NoSQL Concepts</a> 코스의 4챕터 'Graph Databases'를 참고해 정리하였다.
 
 - Graph DB란 무엇인가?
@@ -29,7 +27,6 @@ published: true
   - 각각의 데이터뿐만 아니라 데이터 간의 관계도 똑같이 중요하게 다루기 위해 고안되었다. 
     - 수학의 Graph 이론에 근거하고 있으며, <a href="https://rastalion.me/graph-db-%EA%B7%B8%EB%9E%98%ED%94%84-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/">이 글</a>에 수학적 기원이 잘 정리되어 있음.  
 <br/>
-
 - 구성 요소는 노드(Node, 또는 vertice)와 엣지(Edge, 또는 link, arc)로 구성된다. 
   - 노드는 entity를 뜻한다. 서울, 대전, 대구, 부산 등 각각의 도시는 노드가 될 수 있다.
   - 엣지는 각 노드를 연결하고 노드 간의 관계를 정의한다. 서울과 부산을 오가는 항공편의 경로는 엣지가 될 수 있다.    
@@ -57,12 +54,10 @@ published: true
     - RBD에서 10개 이상의 테이블을 조인하면 성능저하가 발생하지만, 그래프DB는 복잡한 연산도 효율적으로 가능
     - index free adjacency
     - 고정된 스키마가 없어 스키마를 유연하게 변경할 수 있다. 
-<br/>
-
+<br>
+<br>
 
 #### 그래프 DB의 장점/한계점
-<br/>
-
 - 어떤 때 사용하면 좋은가?
   - 데이터 간의 연결이 매우 많을 때 사용하면 좋다.
     - 예를 들어 소셜 네트워크, COVID-19와 같은 질병의 감염경로를 모델링할 때 등
@@ -75,23 +70,23 @@ published: true
   - 일반적인 검색만 수행하는 애플리케이션에는 적절하지 않다. 특정한 시작점이 없이 전체 DB를 검색해야 하는 경우. 
   - entity property가 극도로 큰 값을 가진 경우. 
     - 예를 들어 BLOB(Binary Large Object, 멀티미디어 데이터를 다룰 때 사용), CLOB(Charset Large Object, 매우 긴 문자열데이터)
-<br/>
+<br>
+<br>
 
 
 ####   HOW | 사용해보려면 어떻게 해야 하나?
-- 대표적인 Graph DB 업체인 Neo4j를 살펴보는 게 좋을 것 같다. 
-  - 참고기사 : <a href="https://byline.network/2021/06/22-129/">그래프 DB가 뭐길래... Neo4j, 기업가치 2조원(2021.6)</a>)
+- 대표적인 Graph DB 업체인 Neo4j를 살펴보는 게 좋을 것 같다. (참고기사 : <a href="https://byline.network/2021/06/22-129/">그래프 DB가 뭐길래... Neo4j, 기업가치 2조원(2021.6)</a>)
 - 제공 솔루션들
   - Neo4j Sandbox : 임시로 사용 가능한 클라우드 서비스. 생성 후 3일간 유지된다. 
     - 참조 : https://pizzathief.oopy.io/graphdb-neo4j-introduction
   - Neo4j Desktop, Enterprise Server, Community Server 중에서 다운받아 사용할 수 있다.
     - Neo4j Desktop : 셋업 방법을 보니 나같은 분석가/기획자가 써보기에는 DB연결에 어려려워 보이는데, 한번 해봐야 알 수 있을 것 같다. 다음 과제로 남겨둔다. 
-  - Neo4j Bloom : 시각화 툴 
-    - 일단 써보고 싶었는데, 공식 문서를 보니 Enterprise 계정이 있어야 하는 듯 하다. (<a href=" https://neo4j.com/docs/bloom-user-guide/current/bloom-quick-start/">Bloom Quick Start</a>)
+  - Neo4j Bloom : 시각화 툴. 일단 써보고 싶었는데, 공식 문서를 보니 Enterprise 계정이 있어야 하는 듯 하다. (<a href=" https://neo4j.com/docs/bloom-user-guide/current/bloom-quick-start/">Bloom Quick Start</a>)
   - Neo4j Aura : 클라우드 DB 서비스이며, Google Cloud에 연결할 수 있다. 
     - 참고 : <a href="https://joey2the.tistory.com/m/80">Google Cloud Database Week - Day 2</a>
 - 결론 : 나는 간단히 구조만 파악해보고 싶은데, 우선은 Desktop을 설치해서 해봐야겠다. 
-<br/>  
+<br>  
+<br>
     
 
 #### 그래프 DB를 도입하지 않고, RDB를 바탕으로 지식 그래프를 구현할 수는 없나? 
