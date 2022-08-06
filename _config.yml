@@ -155,13 +155,6 @@ social:
     desc: Follow me on Pinterest
     share: false
 
-  - name: SoundCloud
-    icon: soundcloud
-    username:
-    url:
-    desc: Follow me on SoundCloud
-    share: false
-
   - name: Tumblr
     icon: tumblr
     username:
