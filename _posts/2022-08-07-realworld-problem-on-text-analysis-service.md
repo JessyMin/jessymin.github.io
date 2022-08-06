@@ -2,7 +2,7 @@
 layout: post
 comments : true
 title : "텍스트 분석의 현실적인 문제들 - 전처리, 형태소분석, 후처리"
-date : 2022-08-07
+date : 2022-08-07 10:00:00 +01:30
 category : 'Text Analysis'
 published: true
 ---
