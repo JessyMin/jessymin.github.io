@@ -35,7 +35,7 @@ published: true
 <br/>
 - 삼성SDS 블로그에 실린 아래 이미지의 'Performance' 부분을 보고 RBD와의 차이점을 이해할 수 있었다. <br/>
   -  출처 : <a href="https://www.samsungsds.com/kr/insights/techtoolkit_2021_knowledge_graph.html">세상 모든 것들의 연결고리, 지식 그래프 안에 있습니다</a>
-    <image src="https://assets/images/220724_knowledge_graph_img.jpg"><br/><br/>
+    <image src="https://assets/images/220724_knowledge_graph_img2.jpg"><br/><br/>
     
 
 - 저장 방식
