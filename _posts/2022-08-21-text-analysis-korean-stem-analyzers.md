@@ -2,7 +2,7 @@
 layout: post
 comments : true
 title : "한국어 형태소분석기를 비교하는 기준"
-date : 2022-08-21
+date : 2022-08-21 05:00:00 +01:30
 category : 'Text Analysis'
 published: true
 ---
