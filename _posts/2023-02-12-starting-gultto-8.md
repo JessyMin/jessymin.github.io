@@ -7,7 +7,6 @@ category : 'Essay'
 published: true
 ---
 
-#### 참여 동기
 
 글또 7기에 이어서 8기에도 참여 신청을 했다.
 
