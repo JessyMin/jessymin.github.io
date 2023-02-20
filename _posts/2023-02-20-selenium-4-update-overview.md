@@ -7,10 +7,11 @@ category : 'web-scraping'
 published: true
 ---
 
-**Motivation**
+
 개인적으로 분석해 보고 싶은 주제가 생기면 웹사이트를 크롤링해 텍스트 데이터를 수집하는 경우가 있다. 처음에는 BeautifulSoup을 쓰다가 페이징, 스크롤다운 등 브라우저를 제어할 필요가 있어서 Selenium을 섞어서 쓰고 있다.
 
 그런데 작년에 셀레니움을 쓰려고 보니 버전 4로 업그레이드되어 이전에 짜둔 코드가 작동하지 않았다. 검색을 해서 당장 필요한 건 해결했지만, 셀레니움 3에서 4로 넘어가면서 달라진 부분들을 제대로 이해하진 못한 상태였다. 특히 라이브러리를 import하는 부분의 코드가 많이 달라져서, 한번은 공부해봐야겠다는 생각이 들었다. 그래서 이번에 사이드 프로젝트를 시작하는 김에 셀레니움 4에 대해 한번 이해하고 넘어가기로 했다.
+
 <br/>
 
 
@@ -49,6 +50,7 @@ published: true
 하지만 셀레니움 4에서는 간단히 아래 2가지만 실행하면 된다.
 - Webdriver manager를 설치한다.
 - 코드 앞부분의 선언하는 내용을 작성해 놓고, 재사용한다. 
+
 <br/>
 
 
@@ -69,6 +71,7 @@ pip install webdriver_manager
 import selenium
 print(selenium.__version__)
 ```
+
 <br/>
 
 
@@ -121,9 +124,10 @@ driver = webdriver.Chrome(ChromeDriverManager().install())
 <stdin>:1: DeprecationWarning: executable_path has been deprecated, please pass in a Service object
 ```
 (참고 : 코드잇 Q&A https://www.codeit.kr/community/threads/33729)
+
 <br/>
 
-**2. 웹 Element에 접근해서 값 가져오기**
+**3. 웹 Element에 접근해서 값 가져오기**
 By를 사용하는 것으로 문법이 바뀌었기 때문에, 아래와 같이 먼저 선언해야 한다.
 
 ```python
@@ -170,10 +174,12 @@ driver.find_element(By.CSS_SELECTOR,"#fruits .tomatoes")
 
 ```
 참조 : https://selenium-python.readthedocs.io/locating-elements.html
+
 <br/>
 
 
-**3. 그 외 브라우저 제어 (클릭, 텍스트 입력 등)**
+**4. 그 외 브라우저 제어 (클릭, 텍스트 입력 등)**
+
 텍스트를 수집할 때 참고할 용도로, 자주 사용하는 것만 우선 찾아보았다. 
 
 
@@ -201,6 +207,7 @@ driver.find_element(By.ID, "query").send_keys("파이썬" + Keys.ENTER)
 
 ```
 공식문서 : <a href="https://www.selenium.dev/documentation/webdriver/elements/interactions/">Interacting with web elements</a>
+
 <br/>
 
 
