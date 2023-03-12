@@ -2,7 +2,7 @@
 layout: post
 comments : true
 title : "웹크롤링 시 여러 페이지를 수집하기 위한 UI 유형 구분"
-date : 2023-03-10
+date : 2023-03-12
 category : 'web-scraping'
 published: true
 ---
