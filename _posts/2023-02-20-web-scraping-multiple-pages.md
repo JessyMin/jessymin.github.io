@@ -1,7 +1,7 @@
 ---
 layout: post
 comments : true
-title : "Selenium 버전 4에서 달라진 점"
+title : "웹크롤링 시 여러 페이지를 수집하기 위한 UI 유형 구분"
 date : 2023-03-10
 category : 'web-scraping'
 published: true
